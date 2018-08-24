@@ -285,7 +285,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(72);
+var _reactRouter = __webpack_require__(76);
 
 var _Home = __webpack_require__(30);
 
@@ -308,11 +308,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _redux = __webpack_require__(5);
 
-var _reduxThunk = __webpack_require__(74);
+var _reduxThunk = __webpack_require__(78);
 
 var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
-var _reduxLogger = __webpack_require__(73);
+var _reduxLogger = __webpack_require__(77);
 
 var _reduxLogger2 = _interopRequireDefault(_reduxLogger);
 
@@ -358,13 +358,13 @@ module.exports = require("constructicon/lib/renderDocument");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.sansSerifNo = exports.sansSerifYes = exports.sixtyThirtyTenNo = exports.sixtyThirtyTenYes = exports.halfPaddingNo = exports.halfPaddingYes = exports.clearSectionsNo = exports.clearSectionsYes = exports.notEnoughPaddingNo = exports.notEnoughPaddingYes = exports.consistentPaddingNo = exports.consistentPaddingYes = exports.basicHierarchyNo = exports.basicHierarchyYes = exports.clearCTANo = exports.clearCTAYes = exports.bodyCopyWidthNo = exports.bodyCopyWidthYes = exports.emptySpaceNo = exports.emptySpaceYes = exports.columnLengthNo = exports.columnLengthYes = exports.symmetricalPaddingNo = exports.symmetricalPaddingYes = exports.textAlignNo = exports.textAlignYes = exports.leftAlignNo = exports.leftAlignYes = exports.widthsNo = exports.widthsYes = undefined;
+exports.textOverImagesNo = exports.textOverImagesYes = exports.textAsImagesNo = exports.textAsImagesYes = exports.sansSerifNo = exports.sansSerifYes = exports.sixtyThirtyTenNo = exports.sixtyThirtyTenYes = exports.halfPaddingNo = exports.halfPaddingYes = exports.clearSectionsNo = exports.clearSectionsYes = exports.notEnoughPaddingNo = exports.notEnoughPaddingYes = exports.consistentPaddingNo = exports.consistentPaddingYes = exports.basicHierarchyNo = exports.basicHierarchyYes = exports.clearCTANo = exports.clearCTAYes = exports.bodyCopyWidthNo = exports.bodyCopyWidthYes = exports.emptySpaceNo = exports.emptySpaceYes = exports.columnLengthNo = exports.columnLengthYes = exports.symmetricalPaddingNo = exports.symmetricalPaddingYes = exports.textAlignNo = exports.textAlignYes = exports.leftAlignNo = exports.leftAlignYes = exports.widthsNo = exports.widthsYes = undefined;
 
-var _yes = __webpack_require__(64);
+var _yes = __webpack_require__(68);
 
 var _yes2 = _interopRequireDefault(_yes);
 
-var _no = __webpack_require__(63);
+var _no = __webpack_require__(67);
 
 var _no2 = _interopRequireDefault(_no);
 
@@ -480,6 +480,22 @@ var _no29 = __webpack_require__(55);
 
 var _no30 = _interopRequireDefault(_no29);
 
+var _yes31 = __webpack_require__(64);
+
+var _yes32 = _interopRequireDefault(_yes31);
+
+var _no31 = __webpack_require__(63);
+
+var _no32 = _interopRequireDefault(_no31);
+
+var _yes33 = __webpack_require__(66);
+
+var _yes34 = _interopRequireDefault(_yes33);
+
+var _no33 = __webpack_require__(65);
+
+var _no34 = _interopRequireDefault(_no33);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.widthsYes = _yes2.default;
@@ -512,6 +528,10 @@ exports.sixtyThirtyTenYes = _yes28.default;
 exports.sixtyThirtyTenNo = _no28.default;
 exports.sansSerifYes = _yes30.default;
 exports.sansSerifNo = _no30.default;
+exports.textAsImagesYes = _yes32.default;
+exports.textAsImagesNo = _no32.default;
+exports.textOverImagesYes = _yes34.default;
+exports.textOverImagesNo = _no34.default;
 
 /***/ }),
 /* 14 */
@@ -530,7 +550,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactColor = __webpack_require__(71);
+var _reactColor = __webpack_require__(75);
 
 var _withStyles = __webpack_require__(1);
 
@@ -544,7 +564,7 @@ var _EmojIcon = __webpack_require__(3);
 
 var _EmojIcon2 = _interopRequireDefault(_EmojIcon);
 
-var _wcagContrast = __webpack_require__(75);
+var _wcagContrast = __webpack_require__(79);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1091,7 +1111,7 @@ var _withStyles = __webpack_require__(1);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _heading = __webpack_require__(68);
+var _heading = __webpack_require__(72);
 
 var _heading2 = _interopRequireDefault(_heading);
 
@@ -1130,7 +1150,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _merge2 = __webpack_require__(70);
+var _merge2 = __webpack_require__(74);
 
 var _merge3 = _interopRequireDefault(_merge2);
 
@@ -1848,11 +1868,11 @@ var _Heading = __webpack_require__(21);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _grid = __webpack_require__(66);
+var _grid = __webpack_require__(70);
 
 var _grid2 = _interopRequireDefault(_grid);
 
-var _gridColumn = __webpack_require__(67);
+var _gridColumn = __webpack_require__(71);
 
 var _gridColumn2 = _interopRequireDefault(_gridColumn);
 
@@ -1860,7 +1880,7 @@ var _ListSection = __webpack_require__(25);
 
 var _ListSection2 = _interopRequireDefault(_ListSection);
 
-var _favicon = __webpack_require__(65);
+var _favicon = __webpack_require__(69);
 
 var _favicon2 = _interopRequireDefault(_favicon);
 
@@ -1868,7 +1888,7 @@ var _reactHelmet = __webpack_require__(8);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _traitsProvider = __webpack_require__(69);
+var _traitsProvider = __webpack_require__(73);
 
 var _traitsProvider2 = _interopRequireDefault(_traitsProvider);
 
@@ -2201,7 +2221,7 @@ exports.default = [{
   id: 'bodyCopyWidth',
   title: 'Body copy should only ever be in a narrow container',
   description: 'When paragraphs get too wide, they’re harder to read because there’s less whitespace. Whitespace gives paragraphs shape, which acts like visual bearings, making it easier to find your place.',
-  category: 'misc',
+  category: 'alignment',
   checked: false,
   references: ['https://webdesignfromscratch.com/basics/readability/#blocksize'],
   examples: {
@@ -2219,7 +2239,7 @@ exports.default = [{
   id: '306010',
   title: 'Color usage is influenced by the 60, 30, 10 rule',
   description: 'You should not use equal amounts of the primary, secondary and tertiary colors. An old designer\'s rule is to divide the colors into percentages of 60, 30, and 10. A good example of this distribution of color is a business suit: 60% of the outfit is made up of the slacks and jacket. The shirt represents 30%, and the tie 10%.',
-  category: 'misc',
+  category: 'hierarchy',
   checked: false,
   references: ['http://www.tigercolor.com/color-lab/tips/tip-01.html'],
   examples: {
@@ -2236,6 +2256,27 @@ exports.default = [{
   examples: {
     yes: examples.sansSerifYes,
     no: examples.sansSerifNo
+  }
+}, {
+  id: 'textAsImages',
+  title: 'Never upload text content as an image',
+  description: 'When text is uploaded as an image that content isn\'t visible to site crawling robots, resulting in poor SEO. Depending on the size of the image and the resolution of the browser that youre viewing it on, the text can also be blurry and difficult to read.',
+  category: 'misc',
+  checked: false,
+  references: ['https://en.wikipedia.org/wiki/Sans-serif'],
+  examples: {
+    yes: examples.textAsImagesYes,
+    no: examples.textAsImagesNo
+  }
+}, {
+  id: 'textOverImages',
+  title: 'Make sure no text overlaps images.',
+  description: 'As is the case with many of the items on this list, overlapping text over images can look really good when excecuted well, but most of the time it makes the site look broken. Check your site on all devices to make sure no content accidentally overlaps.',
+  category: 'misc',
+  checked: false,
+  examples: {
+    yes: examples.textOverImagesYes,
+    no: examples.textOverImagesNo
   }
 }];
 
@@ -2411,76 +2452,100 @@ module.exports = __webpack_require__.p + "001f65ef25657fbf0c8d9893f7517eeb.png";
 /* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "1649391eaf76f1f583528331a54f0494.png";
+module.exports = __webpack_require__.p + "a04c7167e097eed973afdc53aafeaf0a.png";
 
 /***/ }),
 /* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "d5160d59f9cd9acc553dad494e761239.png";
+module.exports = __webpack_require__.p + "082079570fca3cad600183cb16cd99a1.png";
 
 /***/ }),
 /* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "3da6f308c48368a5ae9ab541b51f9c45.png";
+module.exports = __webpack_require__.p + "2b3be809318ed9f257bd59e01e4188d6.png";
 
 /***/ }),
 /* 66 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = require("constructicon/grid");
+module.exports = __webpack_require__.p + "f0a88f3db3fcea92b14805f7dc7c8d84.png";
 
 /***/ }),
 /* 67 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = require("constructicon/grid-column");
+module.exports = __webpack_require__.p + "1649391eaf76f1f583528331a54f0494.png";
 
 /***/ }),
 /* 68 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = require("constructicon/heading");
+module.exports = __webpack_require__.p + "d5160d59f9cd9acc553dad494e761239.png";
 
 /***/ }),
 /* 69 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = require("constructicon/traits-provider");
+module.exports = __webpack_require__.p + "3da6f308c48368a5ae9ab541b51f9c45.png";
 
 /***/ }),
 /* 70 */
 /***/ (function(module, exports) {
 
-module.exports = require("lodash/merge");
+module.exports = require("constructicon/grid");
 
 /***/ }),
 /* 71 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-color");
+module.exports = require("constructicon/grid-column");
 
 /***/ }),
 /* 72 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-router");
+module.exports = require("constructicon/heading");
 
 /***/ }),
 /* 73 */
 /***/ (function(module, exports) {
 
-module.exports = require("redux-logger");
+module.exports = require("constructicon/traits-provider");
 
 /***/ }),
 /* 74 */
 /***/ (function(module, exports) {
 
-module.exports = require("redux-thunk");
+module.exports = require("lodash/merge");
 
 /***/ }),
 /* 75 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-color");
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-router");
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports) {
+
+module.exports = require("redux-logger");
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports) {
+
+module.exports = require("redux-thunk");
+
+/***/ }),
+/* 79 */
 /***/ (function(module, exports) {
 
 module.exports = require("wcag-contrast");
