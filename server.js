@@ -1183,7 +1183,8 @@ var ListItem = function (_React$Component) {
           title = _props.title,
           checked = _props.checked,
           description = _props.description,
-          examples = _props.examples,
+          _props$examples = _props.examples,
+          examples = _props$examples === undefined ? {} : _props$examples,
           CustomComponent = _props.component,
           id = _props.id;
       var showExample = this.state.showExample;
