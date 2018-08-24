@@ -21,12 +21,19 @@ export default ({ checked }, { mediaQuery }) => ({
     paddingBottom: '2em',
     display: 'flex',
     justifyContent: 'space-between',
-    width: '100%'
+    width: '100%',
+    [mediaQuery('sm', 'max-width')]: {
+      display: 'block',
+    }
   },
 
   example: {
     width: 'calc(50% - 0.5em)',
-    position: 'relative'
+    position: 'relative',
+    [mediaQuery('sm', 'max-width')]: {
+      paddingTop: '2em',
+      width: '100%',
+    }
   },
 
   checkbox: {

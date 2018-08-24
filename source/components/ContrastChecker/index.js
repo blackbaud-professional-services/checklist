@@ -59,8 +59,8 @@ class ContrastChecker extends React.Component {
         <div className={classNames.resultWrapper}>
 
           <div className={classNames.checks}>
-            <span><EmojIcon name={AA ? 'check' : 'cross'} /> AA Regular Text</span>
-            <span><EmojIcon name={AAA ? 'check' : 'cross'} /> AAA Regular Text</span>
+            <span><EmojIcon name={AA ? 'check' : 'cross'} /> AA</span>
+            <span><EmojIcon name={AAA ? 'check' : 'cross'} /> AAA</span>
           </div>
 
           <div
@@ -74,8 +74,8 @@ class ContrastChecker extends React.Component {
           </div>
 
           <div className={classNames.checks}>
-            <span><EmojIcon name={AALarge ? 'check' : 'cross'} /> AA Large Text</span>
-            <span><EmojIcon name={AAALarge ? 'check' : 'cross'} /> AAA Large Text</span>
+            <span><EmojIcon name={AALarge ? 'check' : 'cross'} /> AA</span>
+            <span><EmojIcon name={AAALarge ? 'check' : 'cross'} /> AAA</span>
           </div>
 
           <div

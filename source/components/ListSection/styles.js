@@ -1,4 +1,4 @@
-export default (props, traits) => ({
+export default (props, { mediaQuery }) => ({
   tabsWrapper: {
     borderBottom: '2px solid #F7F7F7'
   },
@@ -10,6 +10,8 @@ export default (props, traits) => ({
   },
 
   quote: {
+    marginTop: '3em',
+    marginBottom: '3em',
     fontFamily: '"Merriweather", serif',
     borderLeft: '2px solid #000',
     paddingLeft: '2em',
@@ -17,6 +19,9 @@ export default (props, traits) => ({
     lineHeight: '1.7em',
     maxWidth: '30rem',
     fontWeight: 400,
-    fontStyle: 'italic'
+    fontStyle: 'italic',
+    [mediaQuery('sm', 'max-width')]: {
+      display: 'none'
+    }
   }
 })

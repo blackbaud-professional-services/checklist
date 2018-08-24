@@ -1,4 +1,4 @@
-export default () => ({
+export default (props, { mediaQuery }) => ({
   root: {
     '.chrome-picker': {
       boxShadow: 'none !important',
@@ -13,7 +13,10 @@ export default () => ({
     paddingTop: '2em',
     width: '50%',
     display: 'flex',
-    paddingBottom: '2em'
+    paddingBottom: '2em',
+    [mediaQuery('sm', 'max-width')]: {
+      display: 'block'
+    }
   },
 
   pickerWrapper: {
@@ -40,5 +43,4 @@ export default () => ({
       paddingRight: '1em'
     }
   }
-
 })
