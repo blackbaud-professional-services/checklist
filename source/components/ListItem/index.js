@@ -5,6 +5,7 @@ import withStyles from 'constructicon/with-styles'
 import Container from 'constructicon/container'
 import styles from './styles'
 import EmojIcon from '../EmojIcon'
+import References from '../References'
 
 import ContrastChecker from '../../components/ContrastChecker'
 
@@ -43,6 +44,7 @@ class ListItem extends React.Component {
       title,
       checked,
       description,
+      references,
       examples = {},
       component,
       id
@@ -83,6 +85,7 @@ class ListItem extends React.Component {
             <div>
               <div className={classNames.description}>
                 {description}
+                &nbsp;<References links={references} />
               </div>
               {!component && (
                 <div className={classNames.examples}>

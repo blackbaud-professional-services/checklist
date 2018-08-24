@@ -5,6 +5,8 @@ import styles from './styles'
 const emojis = {
   down: '🔽',
   left: '◀️',
+  paperclip: '📎',
+  link: '🔗',
   circle: '⚪️',
   check: '✅',
   ruler: '📐',

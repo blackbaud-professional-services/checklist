@@ -139,6 +139,7 @@ export default [
     description: 'When paragraphs get too wide, they’re harder to read because there’s less whitespace. Whitespace gives paragraphs shape, which acts like visual bearings, making it easier to find your place.',
     category: 'misc',
     checked: false,
+    references: ['https://webdesignfromscratch.com/basics/readability/#blocksize'],
     examples: {
       yes: examples.bodyCopyWidthYes,
       no: examples.bodyCopyWidthNo
@@ -158,6 +159,7 @@ export default [
     description: 'You should not use equal amounts of the primary, secondary and tertiary colors. An old designer\'s rule is to divide the colors into percentages of 60, 30, and 10. A good example of this distribution of color is a business suit: 60% of the outfit is made up of the slacks and jacket. The shirt represents 30%, and the tie 10%.',
     category: 'misc',
     checked: false,
+    references: ['http://www.tigercolor.com/color-lab/tips/tip-01.html'],
     examples: {
       yes: examples.sixtyThirtyTenYes,
       no: examples.sixtyThirtyTenNo
@@ -166,9 +168,10 @@ export default [
   {
     id: 'sansSerif',
     title: 'All body copy should be set in a sans serif typeface',
-    description: 'In typography, a serif is a small line attached to the end of a stroke in a letter or symbol. A typeface with serifs is called a serif typeface. Sans serif typefaces tend to be easier to read on the web.',
+    description: 'Serif typefaces can look fantastic when used correctly, but choosing and typesetting a nice serif can be a tricky task, even more so on the web. I\'d suggest always choosing a sans-serif typeface for body copy as it\'s nearly impossible to use one incorrectly. (A serif is a small line attached to the end of a stroke in a letter or symbol. A typeface without serifs is called a sans serif.)',
     category: 'misc',
     checked: false,
+    references: ['https://en.wikipedia.org/wiki/Sans-serif'],
     examples: {
       yes: examples.sansSerifYes,
       no: examples.sansSerifNo

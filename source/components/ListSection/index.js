@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { compose } from 'redux'
 import withStyles from 'constructicon/with-styles'
 import Container from 'constructicon/container'
+import References from '../References'
 import styles from './styles'
 import Tab from '../Tab'
 import ListItem from '../ListItem'
@@ -54,6 +55,7 @@ class ListSection extends React.Component {
         <Container width={40} spacing={{y: 3, x: 1}}>
           <div className={classNames.quote}>
             {activeTabContent.description}
+            <References links={activeTabContent.references} />
           </div>
         </Container>
 
