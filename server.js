@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "/checklist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 30);
+/******/ 	return __webpack_require__(__webpack_require__.s = 31);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -103,7 +103,7 @@ var _withStyles = __webpack_require__(1);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _styles = __webpack_require__(15);
+var _styles = __webpack_require__(16);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -112,6 +112,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var emojis = {
   down: '🔽',
   left: '◀️',
+  paperclip: '📎',
+  link: '🔗',
   circle: '⚪️',
   check: '✅',
   ruler: '📐',
@@ -164,11 +166,52 @@ module.exports = require("redux");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var References = function References(_ref) {
+  var _ref$links = _ref.links,
+      links = _ref$links === undefined ? [] : _ref$links;
+  return _react2.default.createElement(
+    'span',
+    null,
+    links.map(function (link, i) {
+      return _react2.default.createElement(
+        'a',
+        {
+          target: '_blank',
+          style: { fontSize: '0.8rem' },
+          href: link
+        },
+        '[\uD83D\uDD17',
+        links.length > 1 && ' ' + (i + 1),
+        ']\xA0'
+      );
+    })
+  );
+};
+
+exports.default = References;
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 exports.setIncomplete = exports.setComplete = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _initialState = __webpack_require__(33);
+var _initialState = __webpack_require__(34);
 
 var _initialState2 = _interopRequireDefault(_initialState);
 
@@ -221,13 +264,13 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-helmet");
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -241,9 +284,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(71);
+var _reactRouter = __webpack_require__(72);
 
-var _Home = __webpack_require__(29);
+var _Home = __webpack_require__(30);
 
 var _Home2 = _interopRequireDefault(_Home);
 
@@ -252,7 +295,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _react2.default.createElement(_reactRouter.Route, { path: '/', component: _Home2.default });
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -264,19 +307,19 @@ Object.defineProperty(exports, "__esModule", {
 
 var _redux = __webpack_require__(5);
 
-var _reduxThunk = __webpack_require__(73);
+var _reduxThunk = __webpack_require__(74);
 
 var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
-var _reduxLogger = __webpack_require__(72);
+var _reduxLogger = __webpack_require__(73);
 
 var _reduxLogger2 = _interopRequireDefault(_reduxLogger);
 
-var _checklist = __webpack_require__(6);
+var _checklist = __webpack_require__(7);
 
 var _checklist2 = _interopRequireDefault(_checklist);
 
-var _categories = __webpack_require__(31);
+var _categories = __webpack_require__(32);
 
 var _categories2 = _interopRequireDefault(_categories);
 
@@ -293,19 +336,19 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports = require("boiler-room-runner");
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports) {
 
 module.exports = require("constructicon/lib/renderDocument");
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -316,123 +359,123 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.sansSerifNo = exports.sansSerifYes = exports.sixtyThirtyTenNo = exports.sixtyThirtyTenYes = exports.halfPaddingNo = exports.halfPaddingYes = exports.clearSectionsNo = exports.clearSectionsYes = exports.notEnoughPaddingNo = exports.notEnoughPaddingYes = exports.consistentPaddingNo = exports.consistentPaddingYes = exports.basicHierarchyNo = exports.basicHierarchyYes = exports.clearCTANo = exports.clearCTAYes = exports.bodyCopyWidthNo = exports.bodyCopyWidthYes = exports.emptySpaceNo = exports.emptySpaceYes = exports.columnLengthNo = exports.columnLengthYes = exports.symmetricalPaddingNo = exports.symmetricalPaddingYes = exports.textAlignNo = exports.textAlignYes = exports.leftAlignNo = exports.leftAlignYes = exports.widthsNo = exports.widthsYes = undefined;
 
-var _yes = __webpack_require__(63);
+var _yes = __webpack_require__(64);
 
 var _yes2 = _interopRequireDefault(_yes);
 
-var _no = __webpack_require__(62);
+var _no = __webpack_require__(63);
 
 var _no2 = _interopRequireDefault(_no);
 
-var _yes3 = __webpack_require__(51);
+var _yes3 = __webpack_require__(52);
 
 var _yes4 = _interopRequireDefault(_yes3);
 
-var _no3 = __webpack_require__(50);
+var _no3 = __webpack_require__(51);
 
 var _no4 = _interopRequireDefault(_no3);
 
-var _yes5 = __webpack_require__(61);
+var _yes5 = __webpack_require__(62);
 
 var _yes6 = _interopRequireDefault(_yes5);
 
-var _no5 = __webpack_require__(60);
+var _no5 = __webpack_require__(61);
 
 var _no6 = _interopRequireDefault(_no5);
 
-var _yes7 = __webpack_require__(59);
+var _yes7 = __webpack_require__(60);
 
 var _yes8 = _interopRequireDefault(_yes7);
 
-var _no7 = __webpack_require__(58);
+var _no7 = __webpack_require__(59);
 
 var _no8 = _interopRequireDefault(_no7);
 
-var _yes9 = __webpack_require__(43);
+var _yes9 = __webpack_require__(44);
 
 var _yes10 = _interopRequireDefault(_yes9);
 
-var _no9 = __webpack_require__(42);
+var _no9 = __webpack_require__(43);
 
 var _no10 = _interopRequireDefault(_no9);
 
-var _yes11 = __webpack_require__(47);
+var _yes11 = __webpack_require__(48);
 
 var _yes12 = _interopRequireDefault(_yes11);
 
-var _no11 = __webpack_require__(46);
+var _no11 = __webpack_require__(47);
 
 var _no12 = _interopRequireDefault(_no11);
 
-var _yes13 = __webpack_require__(37);
+var _yes13 = __webpack_require__(38);
 
 var _yes14 = _interopRequireDefault(_yes13);
 
-var _no13 = __webpack_require__(36);
+var _no13 = __webpack_require__(37);
 
 var _no14 = _interopRequireDefault(_no13);
 
-var _yes15 = __webpack_require__(39);
+var _yes15 = __webpack_require__(40);
 
 var _yes16 = _interopRequireDefault(_yes15);
 
-var _no15 = __webpack_require__(38);
+var _no15 = __webpack_require__(39);
 
 var _no16 = _interopRequireDefault(_no15);
 
-var _yes17 = __webpack_require__(35);
+var _yes17 = __webpack_require__(36);
 
 var _yes18 = _interopRequireDefault(_yes17);
 
-var _no17 = __webpack_require__(34);
+var _no17 = __webpack_require__(35);
 
 var _no18 = _interopRequireDefault(_no17);
 
-var _yes19 = __webpack_require__(45);
+var _yes19 = __webpack_require__(46);
 
 var _yes20 = _interopRequireDefault(_yes19);
 
-var _no19 = __webpack_require__(44);
+var _no19 = __webpack_require__(45);
 
 var _no20 = _interopRequireDefault(_no19);
 
-var _yes21 = __webpack_require__(53);
+var _yes21 = __webpack_require__(54);
 
 var _yes22 = _interopRequireDefault(_yes21);
 
-var _no21 = __webpack_require__(52);
+var _no21 = __webpack_require__(53);
 
 var _no22 = _interopRequireDefault(_no21);
 
-var _yes23 = __webpack_require__(41);
+var _yes23 = __webpack_require__(42);
 
 var _yes24 = _interopRequireDefault(_yes23);
 
-var _no23 = __webpack_require__(40);
+var _no23 = __webpack_require__(41);
 
 var _no24 = _interopRequireDefault(_no23);
 
-var _yes25 = __webpack_require__(49);
+var _yes25 = __webpack_require__(50);
 
 var _yes26 = _interopRequireDefault(_yes25);
 
-var _no25 = __webpack_require__(48);
+var _no25 = __webpack_require__(49);
 
 var _no26 = _interopRequireDefault(_no25);
 
-var _yes27 = __webpack_require__(57);
+var _yes27 = __webpack_require__(58);
 
 var _yes28 = _interopRequireDefault(_yes27);
 
-var _no27 = __webpack_require__(56);
+var _no27 = __webpack_require__(57);
 
 var _no28 = _interopRequireDefault(_no27);
 
-var _yes29 = __webpack_require__(55);
+var _yes29 = __webpack_require__(56);
 
 var _yes30 = _interopRequireDefault(_yes29);
 
-var _no29 = __webpack_require__(54);
+var _no29 = __webpack_require__(55);
 
 var _no30 = _interopRequireDefault(_no29);
 
@@ -470,7 +513,7 @@ exports.sansSerifYes = _yes30.default;
 exports.sansSerifNo = _no30.default;
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -486,13 +529,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactColor = __webpack_require__(70);
+var _reactColor = __webpack_require__(71);
 
 var _withStyles = __webpack_require__(1);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _styles = __webpack_require__(14);
+var _styles = __webpack_require__(15);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -500,7 +543,7 @@ var _EmojIcon = __webpack_require__(3);
 
 var _EmojIcon2 = _interopRequireDefault(_EmojIcon);
 
-var _wcagContrast = __webpack_require__(74);
+var _wcagContrast = __webpack_require__(75);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -665,7 +708,7 @@ var ContrastChecker = function (_React$Component) {
 exports.default = (0, _withStyles2.default)(_styles2.default)(ContrastChecker);
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -723,7 +766,7 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -745,7 +788,7 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -776,7 +819,7 @@ var Footer = function Footer() {
 exports.default = Footer;
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -790,7 +833,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHelmet = __webpack_require__(7);
+var _reactHelmet = __webpack_require__(8);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
@@ -856,7 +899,7 @@ var mapStateToProps = function mapStateToProps(_ref2) {
 exports.default = (0, _reactRedux.connect)(mapStateToProps)(HappySad);
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -876,7 +919,7 @@ var _withStyles = __webpack_require__(1);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _styles = __webpack_require__(19);
+var _styles = __webpack_require__(20);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -884,7 +927,7 @@ var _EmojIcon = __webpack_require__(3);
 
 var _EmojIcon2 = _interopRequireDefault(_EmojIcon);
 
-var _HappySad = __webpack_require__(17);
+var _HappySad = __webpack_require__(18);
 
 var _HappySad2 = _interopRequireDefault(_HappySad);
 
@@ -978,7 +1021,7 @@ var Header = function (_React$Component) {
 exports.default = (0, _withStyles2.default)(_styles2.default)(Header);
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1023,7 +1066,7 @@ exports.default = function (props, _ref) {
 };
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1043,11 +1086,11 @@ var _withStyles = __webpack_require__(1);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _heading = __webpack_require__(67);
+var _heading = __webpack_require__(68);
 
 var _heading2 = _interopRequireDefault(_heading);
 
-var _styles = __webpack_require__(21);
+var _styles = __webpack_require__(22);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -1072,7 +1115,7 @@ var Heading = function Heading(_ref) {
 exports.default = (0, _withStyles2.default)(_styles2.default)(Heading);
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1082,7 +1125,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _merge = __webpack_require__(69);
+var _merge = __webpack_require__(70);
 
 var _merge2 = _interopRequireDefault(_merge);
 
@@ -1101,7 +1144,7 @@ exports.default = function (_ref, traits) {
 };
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1129,7 +1172,7 @@ var _container = __webpack_require__(4);
 
 var _container2 = _interopRequireDefault(_container);
 
-var _styles = __webpack_require__(23);
+var _styles = __webpack_require__(24);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -1137,11 +1180,15 @@ var _EmojIcon = __webpack_require__(3);
 
 var _EmojIcon2 = _interopRequireDefault(_EmojIcon);
 
-var _ContrastChecker = __webpack_require__(13);
+var _References = __webpack_require__(6);
+
+var _References2 = _interopRequireDefault(_References);
+
+var _ContrastChecker = __webpack_require__(14);
 
 var _ContrastChecker2 = _interopRequireDefault(_ContrastChecker);
 
-var _checklist = __webpack_require__(6);
+var _checklist = __webpack_require__(7);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1191,6 +1238,7 @@ var ListItem = function (_React$Component) {
           title = _props.title,
           checked = _props.checked,
           description = _props.description,
+          references = _props.references,
           _props$examples = _props.examples,
           examples = _props$examples === undefined ? {} : _props$examples,
           component = _props.component,
@@ -1251,7 +1299,9 @@ var ListItem = function (_React$Component) {
             _react2.default.createElement(
               'div',
               { className: classNames.description },
-              description
+              description,
+              '\xA0',
+              _react2.default.createElement(_References2.default, { links: references })
             ),
             !component && _react2.default.createElement(
               'div',
@@ -1305,7 +1355,7 @@ var mapDispatchToProps = {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps), (0, _withStyles2.default)(_styles2.default))(ListItem);
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1398,7 +1448,7 @@ exports.default = function (_ref, _ref2) {
 };
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1428,15 +1478,19 @@ var _container = __webpack_require__(4);
 
 var _container2 = _interopRequireDefault(_container);
 
-var _styles = __webpack_require__(25);
+var _References = __webpack_require__(6);
+
+var _References2 = _interopRequireDefault(_References);
+
+var _styles = __webpack_require__(26);
 
 var _styles2 = _interopRequireDefault(_styles);
 
-var _Tab = __webpack_require__(26);
+var _Tab = __webpack_require__(27);
 
 var _Tab2 = _interopRequireDefault(_Tab);
 
-var _ListItem = __webpack_require__(22);
+var _ListItem = __webpack_require__(23);
 
 var _ListItem2 = _interopRequireDefault(_ListItem);
 
@@ -1514,7 +1568,8 @@ var ListSection = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: classNames.quote },
-            activeTabContent.description
+            activeTabContent.description,
+            _react2.default.createElement(_References2.default, { links: activeTabContent.references })
           )
         ),
         _react2.default.createElement(
@@ -1545,7 +1600,7 @@ var mapStateToProps = function mapStateToProps(_ref) {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapStateToProps), (0, _withStyles2.default)(_styles2.default))(ListSection);
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1580,7 +1635,7 @@ exports.default = function (props, traits) {
 };
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1602,7 +1657,7 @@ var _reactRedux = __webpack_require__(2);
 
 var _redux = __webpack_require__(5);
 
-var _styles = __webpack_require__(27);
+var _styles = __webpack_require__(28);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -1665,7 +1720,7 @@ var mapStateToProps = function mapStateToProps(_ref3) {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapStateToProps), (0, _withStyles2.default)(_styles2.default))(Tab);
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1701,7 +1756,7 @@ exports.default = function (_ref, _ref2) {
 };
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1734,7 +1789,7 @@ var colors = exports.colors = {
 };
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1750,7 +1805,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRedux = __webpack_require__(2);
 
-var _traits = __webpack_require__(28);
+var _traits = __webpack_require__(29);
 
 var traits = _interopRequireWildcard(_traits);
 
@@ -1758,39 +1813,39 @@ var _container = __webpack_require__(4);
 
 var _container2 = _interopRequireDefault(_container);
 
-var _Header = __webpack_require__(18);
+var _Header = __webpack_require__(19);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Footer = __webpack_require__(16);
+var _Footer = __webpack_require__(17);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _Heading = __webpack_require__(20);
+var _Heading = __webpack_require__(21);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _grid = __webpack_require__(65);
+var _grid = __webpack_require__(66);
 
 var _grid2 = _interopRequireDefault(_grid);
 
-var _gridColumn = __webpack_require__(66);
+var _gridColumn = __webpack_require__(67);
 
 var _gridColumn2 = _interopRequireDefault(_gridColumn);
 
-var _ListSection = __webpack_require__(24);
+var _ListSection = __webpack_require__(25);
 
 var _ListSection2 = _interopRequireDefault(_ListSection);
 
-var _favicon = __webpack_require__(64);
+var _favicon = __webpack_require__(65);
 
 var _favicon2 = _interopRequireDefault(_favicon);
 
-var _reactHelmet = __webpack_require__(7);
+var _reactHelmet = __webpack_require__(8);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _traitsProvider = __webpack_require__(68);
+var _traitsProvider = __webpack_require__(69);
 
 var _traitsProvider2 = _interopRequireDefault(_traitsProvider);
 
@@ -1871,7 +1926,7 @@ var mapStateToProps = function mapStateToProps(_ref2) {
 exports.default = (0, _reactRedux.connect)(mapStateToProps)(Root);
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1882,17 +1937,17 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.renderDocument = undefined;
 
-var _boilerRoomRunner = __webpack_require__(10);
+var _boilerRoomRunner = __webpack_require__(11);
 
-var _renderDocument = __webpack_require__(11);
+var _renderDocument = __webpack_require__(12);
 
 var _renderDocument2 = _interopRequireDefault(_renderDocument);
 
-var _store = __webpack_require__(9);
+var _store = __webpack_require__(10);
 
 var _store2 = _interopRequireDefault(_store);
 
-var _routes = __webpack_require__(8);
+var _routes = __webpack_require__(9);
 
 var _routes2 = _interopRequireDefault(_routes);
 
@@ -1919,7 +1974,7 @@ exports.default = function (_ref) {
 exports.renderDocument = _renderDocument2.default;
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1929,7 +1984,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _initialState = __webpack_require__(32);
+var _initialState = __webpack_require__(33);
 
 var _initialState2 = _interopRequireDefault(_initialState);
 
@@ -1941,7 +1996,7 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1954,22 +2009,26 @@ exports.default = [{
   id: 'alignment',
   name: 'Alignment',
   icon: 'ruler',
-  description: '“When elements are arranged around an axis, the design feels ordered. Things that are ordered feel more stable, comfortable and approachable.”'
+  description: '“When elements are arranged around an axis, the design feels ordered. Things that are ordered feel more stable, comfortable and approachable.”',
+  references: ['http://learndesignprinciples.com/axis.html']
 }, {
   id: 'symmetry',
   name: 'Symmetry',
   icon: 'pretzel',
-  description: '“Symmetry adds balance to a design. When elements are the same on both sides of an axis, the design feels harmonious.”'
+  description: '“Symmetry adds balance to a design. When elements are the same on both sides of an axis, the design feels harmonious.”',
+  references: ['http://learndesignprinciples.com/symmetry.html']
 }, {
   id: 'hierarchy',
   name: 'Hierarchy',
   icon: 'bat',
-  description: '“Visual hierarchy refers to the arrangement or presentation of elements in a way that implies importance.”'
+  description: '“Visual hierarchy refers to the arrangement or presentation of elements in a way that implies importance.”',
+  references: ['https://en.wikipedia.org/wiki/Visual_hierarchy']
 }, {
   id: 'rhythm',
   name: 'Rhythm',
   icon: 'repeat',
-  description: '“Rhythm is a pattern created through repetition. Rhythm introduces order, interest and focus, a break in rhythm will appear more hierarchical.”'
+  description: '“Rhythm is a pattern created through repetition. Rhythm introduces order, interest and focus, a break in rhythm will appear more hierarchical.”',
+  references: ['https://www.hatchdesign.ca/principles-of-design-part-2-rhythm/', 'http://learndesignprinciples.com/rhythm.html']
 }, {
   id: 'misc',
   name: 'Miscellaneous',
@@ -1978,7 +2037,7 @@ exports.default = [{
 }];
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1988,7 +2047,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _examples = __webpack_require__(12);
+var _examples = __webpack_require__(13);
 
 var examples = _interopRequireWildcard(_examples);
 
@@ -2120,6 +2179,7 @@ exports.default = [{
   description: 'When paragraphs get too wide, they’re harder to read because there’s less whitespace. Whitespace gives paragraphs shape, which acts like visual bearings, making it easier to find your place.',
   category: 'misc',
   checked: false,
+  references: ['https://webdesignfromscratch.com/basics/readability/#blocksize'],
   examples: {
     yes: examples.bodyCopyWidthYes,
     no: examples.bodyCopyWidthNo
@@ -2137,6 +2197,7 @@ exports.default = [{
   description: 'You should not use equal amounts of the primary, secondary and tertiary colors. An old designer\'s rule is to divide the colors into percentages of 60, 30, and 10. A good example of this distribution of color is a business suit: 60% of the outfit is made up of the slacks and jacket. The shirt represents 30%, and the tie 10%.',
   category: 'misc',
   checked: false,
+  references: ['http://www.tigercolor.com/color-lab/tips/tip-01.html'],
   examples: {
     yes: examples.sixtyThirtyTenYes,
     no: examples.sixtyThirtyTenNo
@@ -2144,9 +2205,10 @@ exports.default = [{
 }, {
   id: 'sansSerif',
   title: 'All body copy should be set in a sans serif typeface',
-  description: 'In typography, a serif is a small line attached to the end of a stroke in a letter or symbol. A typeface with serifs is called a serif typeface. Sans serif typefaces tend to be easier to read on the web.',
+  description: 'Serif typefaces can look fantastic when used correctly, but choosing and typesetting a nice serif can be a tricky task, even more so on the web. I\'d suggest always choosing a sans-serif typeface for body copy as it\'s nearly impossible to use one incorrectly. (A serif is a small line attached to the end of a stroke in a letter or symbol. A typeface without serifs is called a sans serif.)',
   category: 'misc',
   checked: false,
+  references: ['https://en.wikipedia.org/wiki/Sans-serif'],
   examples: {
     yes: examples.sansSerifYes,
     no: examples.sansSerifNo
@@ -2154,247 +2216,247 @@ exports.default = [{
 }];
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "bf18febc08b104fd33d74333bf32db6e.png";
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "c1a36826abaf48058c42417313e206d7.png";
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "9d4051fc3e4fac2eb5560c2f229017d5.png";
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "2c861b92a6371ba87cbd33c338184add.png";
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fc833609ae536ce441892bd348c005ba.png";
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "222e99bc8a74379e25e1ec229c32cbeb.png";
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "1797cb8fe437b14abe8b3a1e8f080e95.png";
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "e271ee6be07207206526556be798eda4.png";
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "cfd28e2e32ea2e39aeb7f2a31c48516e.png";
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "a8368b00610b70d41677c344c7e8d772.png";
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "ac0126d74fc3fdf25ceaf421743b332d.png";
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "00f884aeeac5a2ab18b493257cf74339.png";
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "82239efff08fc2144723053ada81f7cb.png";
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "826c90b975ac645eae4b74bfbc19d37c.png";
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "2184d916c5d1febcb28b735c835919d2.png";
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "879905403e0d7ea2cf7f8b049d401a75.png";
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "e63ab052e7fe95e0fdf6a7bc5a7a3d91.png";
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "f18595c9774a569b9a85eead25df6edb.png";
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "21afd0cec6e0a2f6d02477647b225d6f.png";
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "1a139b9914d82809e1ce320307db64db.png";
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "92a828715cf8988e93d031a50609a9ec.png";
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "6537fd1a473ce63329ce89545b386c73.png";
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "eba448f37e59410315a60f13d77e8dfe.png";
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "6a49f9cc5fc5f06218ef1d9ca2ca3f6d.png";
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "079ffbc0a77984660b11482bd9a550a8.png";
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "af788682f2f4cb5dce83c56f4edef110.png";
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "0ceb9b03c44b90371a8aab4f05ee1f20.png";
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "001f65ef25657fbf0c8d9893f7517eeb.png";
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "1649391eaf76f1f583528331a54f0494.png";
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "d5160d59f9cd9acc553dad494e761239.png";
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "3da6f308c48368a5ae9ab541b51f9c45.png";
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports) {
 
 module.exports = require("constructicon/grid");
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports) {
 
 module.exports = require("constructicon/grid-column");
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports) {
 
 module.exports = require("constructicon/heading");
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports) {
 
 module.exports = require("constructicon/traits-provider");
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports) {
 
 module.exports = require("lodash/merge");
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-color");
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-router");
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports) {
 
 module.exports = require("redux-logger");
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports) {
 
 module.exports = require("redux-thunk");
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports) {
 
 module.exports = require("wcag-contrast");
