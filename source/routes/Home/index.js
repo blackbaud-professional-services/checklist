@@ -26,6 +26,7 @@ const Root = ({ checklist }) => {
         }}
       >
         <Helmet>
+          <link href="https://fonts.googleapis.com/css?family=Merriweather:400i" rel="stylesheet" />
           <link rel='icon' type='image/png' href={favicon} />
         </Helmet>
 

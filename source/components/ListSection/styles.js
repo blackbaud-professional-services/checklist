@@ -10,10 +10,11 @@ export default (props, traits) => ({
   },
 
   quote: {
+    fontFamily: '"Merriweather", serif',
     borderLeft: '2px solid #000',
     paddingLeft: '2em',
-    fontSize: '1.5em',
-    lineHeight: '1.5em',
+    fontSize: '1.35em',
+    lineHeight: '1.7em',
     maxWidth: '30rem',
     fontWeight: 400,
     fontStyle: 'italic'
