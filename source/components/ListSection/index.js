@@ -32,9 +32,9 @@ class ListSection extends React.Component {
 
     const { activeTab } = this.state
 
-    const activeTabContent = categories.find(tab => (
+    const activeTabContent = categories.filter(tab => (
       tab.id === activeTab
-    ))
+    ))[0]
 
     return (
       <div>
@@ -52,7 +52,7 @@ class ListSection extends React.Component {
           </Container>
         </div>
 
-        <Container width={40} spacing={{y: 3, x: 1}}>
+        <Container width={40} spacing={{x: 1}}>
           <div className={classNames.quote}>
             {activeTabContent.description}
             <References links={activeTabContent.references} />
