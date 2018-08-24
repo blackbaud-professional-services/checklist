@@ -1137,6 +1137,10 @@ var _EmojIcon = __webpack_require__(3);
 
 var _EmojIcon2 = _interopRequireDefault(_EmojIcon);
 
+var _ContrastChecker = __webpack_require__(13);
+
+var _ContrastChecker2 = _interopRequireDefault(_ContrastChecker);
+
 var _checklist = __webpack_require__(6);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -1148,6 +1152,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var components = {
+  ContrastChecker: _ContrastChecker2.default
+};
 
 var ListItem = function (_React$Component) {
   _inherits(ListItem, _React$Component);
@@ -1185,7 +1193,7 @@ var ListItem = function (_React$Component) {
           description = _props.description,
           _props$examples = _props.examples,
           examples = _props$examples === undefined ? {} : _props$examples,
-          CustomComponent = _props.component,
+          component = _props.component,
           id = _props.id;
       var showExample = this.state.showExample;
 
@@ -1193,6 +1201,8 @@ var ListItem = function (_React$Component) {
       var onClick = function onClick() {
         if (checked) setIncomplete(id);else setComplete(id);
       };
+
+      var Component = components[component];
 
       return _react2.default.createElement(
         'div',
@@ -1243,7 +1253,7 @@ var ListItem = function (_React$Component) {
               { className: classNames.description },
               description
             ),
-            !CustomComponent && _react2.default.createElement(
+            !component && _react2.default.createElement(
               'div',
               { className: classNames.examples },
               _react2.default.createElement(
@@ -1273,7 +1283,7 @@ var ListItem = function (_React$Component) {
                 })
               )
             ),
-            CustomComponent && _react2.default.createElement(CustomComponent, null)
+            component && _react2.default.createElement(Component, null)
           )
         )
       );
@@ -1982,12 +1992,6 @@ var _examples = __webpack_require__(12);
 
 var examples = _interopRequireWildcard(_examples);
 
-var _ContrastChecker = __webpack_require__(13);
-
-var _ContrastChecker2 = _interopRequireDefault(_ContrastChecker);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 exports.default = [{
@@ -2126,7 +2130,7 @@ exports.default = [{
   description: 'All text should be in a color that sufficiently contrasts with the background color, and passes the industry standard accessibility guidelines (WCAG standards). Test your colors with the tool below.',
   category: 'misc',
   checked: false,
-  component: _ContrastChecker2.default
+  component: 'ContrastChecker'
 }, {
   id: '306010',
   title: 'Color usage is influenced by the 60, 30, 10 rule',
