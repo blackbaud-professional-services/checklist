@@ -9,7 +9,7 @@ export default [
   {
     id: 'symmetry',
     name: 'Symmetry',
-    icon: 'pretzel',
+    icon: 'swords',
     description: '“Symmetry adds balance to a design. When elements are the same on both sides of an axis, the design feels harmonious.”',
     references: ['http://learndesignprinciples.com/symmetry.html']
   },
