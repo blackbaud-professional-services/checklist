@@ -147,7 +147,7 @@ export default [
   },
   {
     id: 'colorContrast',
-    title: 'All text passes at least WCAG AA color contrast standards.',
+    title: 'Large and regular text both pass at least WCAG AA color contrast standards.',
     description: 'All text should be in a color that sufficiently contrasts with the background color, and passes the industry standard accessibility guidelines (WCAG standards). Test your colors with the tool below.',
     category: 'misc',
     checked: false,
