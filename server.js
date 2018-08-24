@@ -117,6 +117,7 @@ var emojis = {
   circle: '⚪️',
   check: '✅',
   ruler: '📐',
+  swords: '⚔️',
   pretzel: '🥨',
   bat: '🏓',
   repeat: '🔁',
@@ -644,13 +645,13 @@ var ContrastChecker = function (_React$Component) {
               'span',
               null,
               _react2.default.createElement(_EmojIcon2.default, { name: AA ? 'check' : 'cross' }),
-              ' AA Regular Text'
+              ' AA'
             ),
             _react2.default.createElement(
               'span',
               null,
               _react2.default.createElement(_EmojIcon2.default, { name: AAA ? 'check' : 'cross' }),
-              ' AAA Regular Text'
+              ' AAA'
             )
           ),
           _react2.default.createElement(
@@ -673,13 +674,13 @@ var ContrastChecker = function (_React$Component) {
               'span',
               null,
               _react2.default.createElement(_EmojIcon2.default, { name: AALarge ? 'check' : 'cross' }),
-              ' AA Large Text'
+              ' AA'
             ),
             _react2.default.createElement(
               'span',
               null,
               _react2.default.createElement(_EmojIcon2.default, { name: AAALarge ? 'check' : 'cross' }),
-              ' AAA Large Text'
+              ' AAA'
             )
           ),
           _react2.default.createElement(
@@ -718,7 +719,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-exports.default = function () {
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+exports.default = function (props, _ref) {
+  var mediaQuery = _ref.mediaQuery;
   return {
     root: {
       '.chrome-picker': {
@@ -730,12 +734,14 @@ exports.default = function () {
       }
     },
 
-    pickers: {
+    pickers: _defineProperty({
       paddingTop: '2em',
       width: '50%',
       display: 'flex',
       paddingBottom: '2em'
-    },
+    }, mediaQuery('sm', 'max-width'), {
+      display: 'block'
+    }),
 
     pickerWrapper: {
       paddingRight: '1em'
@@ -761,7 +767,6 @@ exports.default = function () {
         paddingRight: '1em'
       }
     }
-
   };
 };
 
@@ -1125,21 +1130,26 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _merge = __webpack_require__(70);
+var _merge2 = __webpack_require__(70);
 
-var _merge2 = _interopRequireDefault(_merge);
+var _merge3 = _interopRequireDefault(_merge2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = function (_ref, traits) {
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+exports.default = function (_ref, _ref2) {
   var styles = _ref.styles;
+  var mediaQuery = _ref2.mediaQuery;
   return {
-    root: (0, _merge2.default)({
-      fontSize: '2.5em',
+    root: (0, _merge3.default)(_defineProperty({
+      fontSize: '1.5em',
       fontFamily: 'inherit',
       lineHeight: '1.3em',
       fontWeight: '400'
-    }, styles)
+    }, mediaQuery('sm'), {
+      fontSize: '2.5em'
+    }), styles)
   };
 };
 
@@ -1388,18 +1398,23 @@ exports.default = function (_ref, _ref2) {
       cursor: 'pointer'
     },
 
-    examples: {
+    examples: _defineProperty({
       paddingTop: '1em',
       paddingBottom: '2em',
       display: 'flex',
       justifyContent: 'space-between',
       width: '100%'
-    },
+    }, mediaQuery('sm', 'max-width'), {
+      display: 'block'
+    }),
 
-    example: {
+    example: _defineProperty({
       width: 'calc(50% - 0.5em)',
       position: 'relative'
-    },
+    }, mediaQuery('sm', 'max-width'), {
+      paddingTop: '2em',
+      width: '100%'
+    }),
 
     checkbox: {
       cursor: 'pointer',
@@ -1535,9 +1550,9 @@ var ListSection = function (_React$Component) {
       var activeTab = this.state.activeTab;
 
 
-      var activeTabContent = categories.find(function (tab) {
+      var activeTabContent = categories.filter(function (tab) {
         return tab.id === activeTab;
-      });
+      })[0];
 
       return _react2.default.createElement(
         'div',
@@ -1564,7 +1579,7 @@ var ListSection = function (_React$Component) {
         ),
         _react2.default.createElement(
           _container2.default,
-          { width: 40, spacing: { y: 3, x: 1 } },
+          { width: 40, spacing: { x: 1 } },
           _react2.default.createElement(
             'div',
             { className: classNames.quote },
@@ -1610,7 +1625,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-exports.default = function (props, traits) {
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+exports.default = function (props, _ref) {
+  var mediaQuery = _ref.mediaQuery;
   return {
     tabsWrapper: {
       borderBottom: '2px solid #F7F7F7'
@@ -1622,7 +1640,9 @@ exports.default = function (props, traits) {
       justifyContent: 'space-between'
     },
 
-    quote: {
+    quote: _defineProperty({
+      marginTop: '3em',
+      marginBottom: '3em',
       fontFamily: '"Merriweather", serif',
       borderLeft: '2px solid #000',
       paddingLeft: '2em',
@@ -1631,7 +1651,9 @@ exports.default = function (props, traits) {
       maxWidth: '30rem',
       fontWeight: 400,
       fontStyle: 'italic'
-    }
+    }, mediaQuery('sm', 'max-width'), {
+      display: 'none'
+    })
   };
 };
 
@@ -2016,7 +2038,7 @@ exports.default = [{
 }, {
   id: 'symmetry',
   name: 'Symmetry',
-  icon: 'pretzel',
+  icon: 'swords',
   description: '“Symmetry adds balance to a design. When elements are the same on both sides of an axis, the design feels harmonious.”',
   references: ['http://learndesignprinciples.com/symmetry.html']
 }, {
@@ -2188,7 +2210,7 @@ exports.default = [{
   }
 }, {
   id: 'colorContrast',
-  title: 'All text passes at least WCAG AA color contrast standards.',
+  title: 'Large and regular text both pass at least WCAG AA color contrast standards.',
   description: 'All text should be in a color that sufficiently contrasts with the background color, and passes the industry standard accessibility guidelines (WCAG standards). Test your colors with the tool below.',
   category: 'misc',
   checked: false,
