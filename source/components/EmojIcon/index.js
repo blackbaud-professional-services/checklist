@@ -10,6 +10,7 @@ const emojis = {
   circle: '⚪️',
   check: '✅',
   ruler: '📐',
+  swords: '⚔️',
   pretzel: '🥨',
   bat: '🏓',
   repeat: '🔁',
