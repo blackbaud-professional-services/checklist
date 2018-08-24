@@ -1623,10 +1623,11 @@ exports.default = function (props, traits) {
     },
 
     quote: {
+      fontFamily: '"Merriweather", serif',
       borderLeft: '2px solid #000',
       paddingLeft: '2em',
-      fontSize: '1.5em',
-      lineHeight: '1.5em',
+      fontSize: '1.35em',
+      lineHeight: '1.7em',
       maxWidth: '30rem',
       fontWeight: 400,
       fontStyle: 'italic'
@@ -1872,6 +1873,7 @@ var Root = function Root(_ref) {
       _react2.default.createElement(
         _reactHelmet2.default,
         null,
+        _react2.default.createElement('link', { href: 'https://fonts.googleapis.com/css?family=Merriweather:400i', rel: 'stylesheet' }),
         _react2.default.createElement('link', { rel: 'icon', type: 'image/png', href: _favicon2.default })
       ),
       _react2.default.createElement(_Header2.default, null),
