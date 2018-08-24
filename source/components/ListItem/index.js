@@ -6,10 +6,16 @@ import Container from 'constructicon/container'
 import styles from './styles'
 import EmojIcon from '../EmojIcon'
 
+import ContrastChecker from '../../components/ContrastChecker'
+
 import {
   setComplete,
   setIncomplete
 } from '../../store/checklist'
+
+const components = {
+  ContrastChecker
+}
 
 class ListItem extends React.Component {
   constructor () {
@@ -37,8 +43,8 @@ class ListItem extends React.Component {
       title,
       checked,
       description,
-      examples,
-      component: CustomComponent,
+      examples = {},
+      component,
       id
     } = this.props
 
@@ -50,6 +56,8 @@ class ListItem extends React.Component {
       if (checked) setIncomplete(id)
       else setComplete(id)
     }
+
+    const Component = components[component]
 
     return (
       <div className={classNames.root}>
@@ -76,7 +84,7 @@ class ListItem extends React.Component {
               <div className={classNames.description}>
                 {description}
               </div>
-              {!CustomComponent && (
+              {!component && (
                 <div className={classNames.examples}>
                   <div className={classNames.example}>
                     <span className={classNames.exampleText}>
@@ -98,7 +106,7 @@ class ListItem extends React.Component {
                   </div>
                 </div>
               )}
-              {CustomComponent && <CustomComponent />}
+              {component && <Component />}
             </div>
           )}
         </Container>

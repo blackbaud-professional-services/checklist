@@ -1,5 +1,4 @@
 import * as examples from '../../assets/examples'
-import ContrastChecker from '../../components/ContrastChecker'
 
 export default [
   {
@@ -49,7 +48,7 @@ export default [
   {
     id: 'columnLength',
     title: 'Ensure content in columns are all similar length',
-    description: 'Inconsistent column lenghts are a really easy way to throw off the symmetry of a site. You will never be able to get this correct on all devices and screen sizes, but do your best to provide copy of equal length',
+    description: 'Inconsistent column lengths are a really easy way to throw off the symmetry of a site. You will never be able to get this correct on all devices and screen sizes, but do your best to provide copy of equal length',
     category: 'symmetry',
     checked: false,
     examples: {
@@ -151,7 +150,7 @@ export default [
     description: 'All text should be in a color that sufficiently contrasts with the background color, and passes the industry standard accessibility guidelines (WCAG standards). Test your colors with the tool below.',
     category: 'misc',
     checked: false,
-    component: ContrastChecker
+    component: 'ContrastChecker'
   },
   {
     id: '306010',
