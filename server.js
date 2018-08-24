@@ -769,7 +769,7 @@ var Footer = function Footer() {
   return _react2.default.createElement(
     _container2.default,
     { width: 40, spacing: { x: 1, t: 6, b: 3 } },
-    'There are definately exceptions to these rules (sometimes).'
+    'There are definitely exceptions to these rules (sometimes).'
   );
 };
 
@@ -2033,7 +2033,7 @@ exports.default = [{
 }, {
   id: 'columnLength',
   title: 'Ensure content in columns are all similar length',
-  description: 'Inconsistent column lenghts are a really easy way to throw off the symmetry of a site. You will never be able to get this correct on all devices and screen sizes, but do your best to provide copy of equal length',
+  description: 'Inconsistent column lengths are a really easy way to throw off the symmetry of a site. You will never be able to get this correct on all devices and screen sizes, but do your best to provide copy of equal length',
   category: 'symmetry',
   checked: false,
   examples: {
