@@ -42,3 +42,9 @@ export sixtyThirtyTenNo from './sixtyThirtyTen/no.png'
 
 export sansSerifYes from './sansSerif/yes.png'
 export sansSerifNo from './sansSerif/no.png'
+
+export textAsImagesYes from './textAsImages/yes.png'
+export textAsImagesNo from './textAsImages/no.png'
+
+export textOverImagesYes from './textOverImages/yes.png'
+export textOverImagesNo from './textOverImages/no.png'

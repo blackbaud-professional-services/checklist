@@ -137,7 +137,7 @@ export default [
     id: 'bodyCopyWidth',
     title: 'Body copy should only ever be in a narrow container',
     description: 'When paragraphs get too wide, they’re harder to read because there’s less whitespace. Whitespace gives paragraphs shape, which acts like visual bearings, making it easier to find your place.',
-    category: 'misc',
+    category: 'alignment',
     checked: false,
     references: ['https://webdesignfromscratch.com/basics/readability/#blocksize'],
     examples: {
@@ -157,7 +157,7 @@ export default [
     id: '306010',
     title: 'Color usage is influenced by the 60, 30, 10 rule',
     description: 'You should not use equal amounts of the primary, secondary and tertiary colors. An old designer\'s rule is to divide the colors into percentages of 60, 30, and 10. A good example of this distribution of color is a business suit: 60% of the outfit is made up of the slacks and jacket. The shirt represents 30%, and the tie 10%.',
-    category: 'misc',
+    category: 'hierarchy',
     checked: false,
     references: ['http://www.tigercolor.com/color-lab/tips/tip-01.html'],
     examples: {
@@ -176,5 +176,28 @@ export default [
       yes: examples.sansSerifYes,
       no: examples.sansSerifNo
     }
-  }
+  },
+  {
+    id: 'textAsImages',
+    title: 'Never upload text content as an image',
+    description: 'When text is uploaded as an image that content isn\'t visible to site crawling robots, resulting in poor SEO. Depending on the size of the image and the resolution of the browser that youre viewing it on, the text can also be blurry and difficult to read.',
+    category: 'misc',
+    checked: false,
+    references: ['https://en.wikipedia.org/wiki/Sans-serif'],
+    examples: {
+      yes: examples.textAsImagesYes,
+      no: examples.textAsImagesNo
+    }
+  },
+  {
+    id: 'textOverImages',
+    title: 'Make sure no text overlaps images.',
+    description: 'As is the case with many of the items on this list, overlapping text over images can look really good when excecuted well, but most of the time it makes the site look broken. Check your site on all devices to make sure no content accidentally overlaps.',
+    category: 'misc',
+    checked: false,
+    examples: {
+      yes: examples.textOverImagesYes,
+      no: examples.textOverImagesNo
+    }
+  },
 ]
