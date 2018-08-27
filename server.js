@@ -285,7 +285,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(76);
+var _reactRouter = __webpack_require__(78);
 
 var _Home = __webpack_require__(30);
 
@@ -308,11 +308,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _redux = __webpack_require__(5);
 
-var _reduxThunk = __webpack_require__(78);
+var _reduxThunk = __webpack_require__(80);
 
 var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
-var _reduxLogger = __webpack_require__(77);
+var _reduxLogger = __webpack_require__(79);
 
 var _reduxLogger2 = _interopRequireDefault(_reduxLogger);
 
@@ -358,37 +358,37 @@ module.exports = require("constructicon/lib/renderDocument");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.textOverImagesNo = exports.textOverImagesYes = exports.textAsImagesNo = exports.textAsImagesYes = exports.sansSerifNo = exports.sansSerifYes = exports.sixtyThirtyTenNo = exports.sixtyThirtyTenYes = exports.halfPaddingNo = exports.halfPaddingYes = exports.clearSectionsNo = exports.clearSectionsYes = exports.notEnoughPaddingNo = exports.notEnoughPaddingYes = exports.consistentPaddingNo = exports.consistentPaddingYes = exports.basicHierarchyNo = exports.basicHierarchyYes = exports.clearCTANo = exports.clearCTAYes = exports.bodyCopyWidthNo = exports.bodyCopyWidthYes = exports.emptySpaceNo = exports.emptySpaceYes = exports.columnLengthNo = exports.columnLengthYes = exports.symmetricalPaddingNo = exports.symmetricalPaddingYes = exports.textAlignNo = exports.textAlignYes = exports.leftAlignNo = exports.leftAlignYes = exports.widthsNo = exports.widthsYes = undefined;
+exports.highResNo = exports.highResYes = exports.textOverImagesNo = exports.textOverImagesYes = exports.textAsImagesNo = exports.textAsImagesYes = exports.sansSerifNo = exports.sansSerifYes = exports.sixtyThirtyTenNo = exports.sixtyThirtyTenYes = exports.halfPaddingNo = exports.halfPaddingYes = exports.clearSectionsNo = exports.clearSectionsYes = exports.notEnoughPaddingNo = exports.notEnoughPaddingYes = exports.consistentPaddingNo = exports.consistentPaddingYes = exports.basicHierarchyNo = exports.basicHierarchyYes = exports.clearCTANo = exports.clearCTAYes = exports.bodyCopyWidthNo = exports.bodyCopyWidthYes = exports.emptySpaceNo = exports.emptySpaceYes = exports.columnLengthNo = exports.columnLengthYes = exports.symmetricalPaddingNo = exports.symmetricalPaddingYes = exports.textAlignNo = exports.textAlignYes = exports.leftAlignNo = exports.leftAlignYes = exports.widthsNo = exports.widthsYes = undefined;
 
-var _yes = __webpack_require__(68);
+var _yes = __webpack_require__(70);
 
 var _yes2 = _interopRequireDefault(_yes);
 
-var _no = __webpack_require__(67);
+var _no = __webpack_require__(69);
 
 var _no2 = _interopRequireDefault(_no);
 
-var _yes3 = __webpack_require__(52);
+var _yes3 = __webpack_require__(54);
 
 var _yes4 = _interopRequireDefault(_yes3);
 
-var _no3 = __webpack_require__(51);
+var _no3 = __webpack_require__(53);
 
 var _no4 = _interopRequireDefault(_no3);
 
-var _yes5 = __webpack_require__(62);
+var _yes5 = __webpack_require__(64);
 
 var _yes6 = _interopRequireDefault(_yes5);
 
-var _no5 = __webpack_require__(61);
+var _no5 = __webpack_require__(63);
 
 var _no6 = _interopRequireDefault(_no5);
 
-var _yes7 = __webpack_require__(60);
+var _yes7 = __webpack_require__(62);
 
 var _yes8 = _interopRequireDefault(_yes7);
 
-var _no7 = __webpack_require__(59);
+var _no7 = __webpack_require__(61);
 
 var _no8 = _interopRequireDefault(_no7);
 
@@ -440,11 +440,11 @@ var _no19 = __webpack_require__(45);
 
 var _no20 = _interopRequireDefault(_no19);
 
-var _yes21 = __webpack_require__(54);
+var _yes21 = __webpack_require__(56);
 
 var _yes22 = _interopRequireDefault(_yes21);
 
-var _no21 = __webpack_require__(53);
+var _no21 = __webpack_require__(55);
 
 var _no22 = _interopRequireDefault(_no21);
 
@@ -464,37 +464,45 @@ var _no25 = __webpack_require__(49);
 
 var _no26 = _interopRequireDefault(_no25);
 
-var _yes27 = __webpack_require__(58);
+var _yes27 = __webpack_require__(60);
 
 var _yes28 = _interopRequireDefault(_yes27);
 
-var _no27 = __webpack_require__(57);
+var _no27 = __webpack_require__(59);
 
 var _no28 = _interopRequireDefault(_no27);
 
-var _yes29 = __webpack_require__(56);
+var _yes29 = __webpack_require__(58);
 
 var _yes30 = _interopRequireDefault(_yes29);
 
-var _no29 = __webpack_require__(55);
+var _no29 = __webpack_require__(57);
 
 var _no30 = _interopRequireDefault(_no29);
 
-var _yes31 = __webpack_require__(64);
+var _yes31 = __webpack_require__(66);
 
 var _yes32 = _interopRequireDefault(_yes31);
 
-var _no31 = __webpack_require__(63);
+var _no31 = __webpack_require__(65);
 
 var _no32 = _interopRequireDefault(_no31);
 
-var _yes33 = __webpack_require__(66);
+var _yes33 = __webpack_require__(68);
 
 var _yes34 = _interopRequireDefault(_yes33);
 
-var _no33 = __webpack_require__(65);
+var _no33 = __webpack_require__(67);
 
 var _no34 = _interopRequireDefault(_no33);
+
+var _yes35 = __webpack_require__(52);
+
+var _yes36 = _interopRequireDefault(_yes35);
+
+var _no35 = __webpack_require__(51);
+
+var _no36 = _interopRequireDefault(_no35);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -532,6 +540,8 @@ exports.textAsImagesYes = _yes32.default;
 exports.textAsImagesNo = _no32.default;
 exports.textOverImagesYes = _yes34.default;
 exports.textOverImagesNo = _no34.default;
+exports.highResYes = _yes36.default;
+exports.highResNo = _no36.default;
 
 /***/ }),
 /* 14 */
@@ -550,7 +560,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactColor = __webpack_require__(75);
+var _reactColor = __webpack_require__(77);
 
 var _withStyles = __webpack_require__(1);
 
@@ -564,7 +574,7 @@ var _EmojIcon = __webpack_require__(3);
 
 var _EmojIcon2 = _interopRequireDefault(_EmojIcon);
 
-var _wcagContrast = __webpack_require__(79);
+var _wcagContrast = __webpack_require__(81);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1111,7 +1121,7 @@ var _withStyles = __webpack_require__(1);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _heading = __webpack_require__(72);
+var _heading = __webpack_require__(74);
 
 var _heading2 = _interopRequireDefault(_heading);
 
@@ -1150,7 +1160,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _merge2 = __webpack_require__(74);
+var _merge2 = __webpack_require__(76);
 
 var _merge3 = _interopRequireDefault(_merge2);
 
@@ -1868,11 +1878,11 @@ var _Heading = __webpack_require__(21);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _grid = __webpack_require__(70);
+var _grid = __webpack_require__(72);
 
 var _grid2 = _interopRequireDefault(_grid);
 
-var _gridColumn = __webpack_require__(71);
+var _gridColumn = __webpack_require__(73);
 
 var _gridColumn2 = _interopRequireDefault(_gridColumn);
 
@@ -1880,7 +1890,7 @@ var _ListSection = __webpack_require__(25);
 
 var _ListSection2 = _interopRequireDefault(_ListSection);
 
-var _favicon = __webpack_require__(69);
+var _favicon = __webpack_require__(71);
 
 var _favicon2 = _interopRequireDefault(_favicon);
 
@@ -1888,7 +1898,7 @@ var _reactHelmet = __webpack_require__(8);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _traitsProvider = __webpack_require__(73);
+var _traitsProvider = __webpack_require__(75);
 
 var _traitsProvider2 = _interopRequireDefault(_traitsProvider);
 
@@ -2278,6 +2288,16 @@ exports.default = [{
     yes: examples.textOverImagesYes,
     no: examples.textOverImagesNo
   }
+}, {
+  id: 'highRes',
+  title: 'All images are high enough resolution',
+  description: 'High resolution images are one of the most important parts of a website. When your imagery is low resolution, it makes an otherwise great site look cheap.',
+  category: 'misc',
+  checked: false,
+  examples: {
+    yes: examples.highResYes,
+    no: examples.highResNo
+  }
 }];
 
 /***/ }),
@@ -2380,172 +2400,184 @@ module.exports = __webpack_require__.p + "879905403e0d7ea2cf7f8b049d401a75.png";
 /* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "e63ab052e7fe95e0fdf6a7bc5a7a3d91.png";
+module.exports = __webpack_require__.p + "597bb2f6a7dfb16f831b5f501a6c7ddd.png";
 
 /***/ }),
 /* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "f18595c9774a569b9a85eead25df6edb.png";
+module.exports = __webpack_require__.p + "16922bc6fc8b2ab3187a6ad913dc1a85.png";
 
 /***/ }),
 /* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "21afd0cec6e0a2f6d02477647b225d6f.png";
+module.exports = __webpack_require__.p + "e63ab052e7fe95e0fdf6a7bc5a7a3d91.png";
 
 /***/ }),
 /* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "1a139b9914d82809e1ce320307db64db.png";
+module.exports = __webpack_require__.p + "f18595c9774a569b9a85eead25df6edb.png";
 
 /***/ }),
 /* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "92a828715cf8988e93d031a50609a9ec.png";
+module.exports = __webpack_require__.p + "21afd0cec6e0a2f6d02477647b225d6f.png";
 
 /***/ }),
 /* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "6537fd1a473ce63329ce89545b386c73.png";
+module.exports = __webpack_require__.p + "1a139b9914d82809e1ce320307db64db.png";
 
 /***/ }),
 /* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "eba448f37e59410315a60f13d77e8dfe.png";
+module.exports = __webpack_require__.p + "92a828715cf8988e93d031a50609a9ec.png";
 
 /***/ }),
 /* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "6a49f9cc5fc5f06218ef1d9ca2ca3f6d.png";
+module.exports = __webpack_require__.p + "6537fd1a473ce63329ce89545b386c73.png";
 
 /***/ }),
 /* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "079ffbc0a77984660b11482bd9a550a8.png";
+module.exports = __webpack_require__.p + "eba448f37e59410315a60f13d77e8dfe.png";
 
 /***/ }),
 /* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "af788682f2f4cb5dce83c56f4edef110.png";
+module.exports = __webpack_require__.p + "6a49f9cc5fc5f06218ef1d9ca2ca3f6d.png";
 
 /***/ }),
 /* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "0ceb9b03c44b90371a8aab4f05ee1f20.png";
+module.exports = __webpack_require__.p + "079ffbc0a77984660b11482bd9a550a8.png";
 
 /***/ }),
 /* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "001f65ef25657fbf0c8d9893f7517eeb.png";
+module.exports = __webpack_require__.p + "af788682f2f4cb5dce83c56f4edef110.png";
 
 /***/ }),
 /* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "a04c7167e097eed973afdc53aafeaf0a.png";
+module.exports = __webpack_require__.p + "0ceb9b03c44b90371a8aab4f05ee1f20.png";
 
 /***/ }),
 /* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "082079570fca3cad600183cb16cd99a1.png";
+module.exports = __webpack_require__.p + "001f65ef25657fbf0c8d9893f7517eeb.png";
 
 /***/ }),
 /* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "2b3be809318ed9f257bd59e01e4188d6.png";
+module.exports = __webpack_require__.p + "a04c7167e097eed973afdc53aafeaf0a.png";
 
 /***/ }),
 /* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "f0a88f3db3fcea92b14805f7dc7c8d84.png";
+module.exports = __webpack_require__.p + "082079570fca3cad600183cb16cd99a1.png";
 
 /***/ }),
 /* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "1649391eaf76f1f583528331a54f0494.png";
+module.exports = __webpack_require__.p + "148995d1b2fae7e395a8b8ed05fee530.png";
 
 /***/ }),
 /* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "d5160d59f9cd9acc553dad494e761239.png";
+module.exports = __webpack_require__.p + "dcb78489008a640b3f9255b9ae86c19f.png";
 
 /***/ }),
 /* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "3da6f308c48368a5ae9ab541b51f9c45.png";
+module.exports = __webpack_require__.p + "1649391eaf76f1f583528331a54f0494.png";
 
 /***/ }),
 /* 70 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = require("constructicon/grid");
+module.exports = __webpack_require__.p + "d5160d59f9cd9acc553dad494e761239.png";
 
 /***/ }),
 /* 71 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = require("constructicon/grid-column");
+module.exports = __webpack_require__.p + "3da6f308c48368a5ae9ab541b51f9c45.png";
 
 /***/ }),
 /* 72 */
 /***/ (function(module, exports) {
 
-module.exports = require("constructicon/heading");
+module.exports = require("constructicon/grid");
 
 /***/ }),
 /* 73 */
 /***/ (function(module, exports) {
 
-module.exports = require("constructicon/traits-provider");
+module.exports = require("constructicon/grid-column");
 
 /***/ }),
 /* 74 */
 /***/ (function(module, exports) {
 
-module.exports = require("lodash/merge");
+module.exports = require("constructicon/heading");
 
 /***/ }),
 /* 75 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-color");
+module.exports = require("constructicon/traits-provider");
 
 /***/ }),
 /* 76 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-router");
+module.exports = require("lodash/merge");
 
 /***/ }),
 /* 77 */
 /***/ (function(module, exports) {
 
-module.exports = require("redux-logger");
+module.exports = require("react-color");
 
 /***/ }),
 /* 78 */
 /***/ (function(module, exports) {
 
-module.exports = require("redux-thunk");
+module.exports = require("react-router");
 
 /***/ }),
 /* 79 */
+/***/ (function(module, exports) {
+
+module.exports = require("redux-logger");
+
+/***/ }),
+/* 80 */
+/***/ (function(module, exports) {
+
+module.exports = require("redux-thunk");
+
+/***/ }),
+/* 81 */
 /***/ (function(module, exports) {
 
 module.exports = require("wcag-contrast");
