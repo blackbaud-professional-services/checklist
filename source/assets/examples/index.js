@@ -48,3 +48,6 @@ export textAsImagesNo from './textAsImages/no.png'
 
 export textOverImagesYes from './textOverImages/yes.png'
 export textOverImagesNo from './textOverImages/no.png'
+
+export highResYes from './highRes/yes.png'
+export highResNo from './highRes/no.png'

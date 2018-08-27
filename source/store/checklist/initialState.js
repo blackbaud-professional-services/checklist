@@ -200,4 +200,15 @@ export default [
       no: examples.textOverImagesNo
     }
   },
+  {
+    id: 'highRes',
+    title: 'All images are high enough resolution',
+    description: 'High resolution images are one of the most important parts of a website. When your imagery is low resolution, it makes an otherwise great site look cheap.',
+    category: 'misc',
+    checked: false,
+    examples: {
+      yes: examples.highResYes,
+      no: examples.highResNo
+    }
+  },
 ]
