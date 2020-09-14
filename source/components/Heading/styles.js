@@ -7,7 +7,7 @@ export default ({ styles }, { mediaQuery }) => ({
     lineHeight: '1.3em',
     fontWeight: '400',
     [mediaQuery('sm')]: {
-      fontSize: '2.5em',
+      fontSize: '2.5em'
     }
   }, styles)
 })

@@ -1,18 +1,17 @@
 {
   "name": "checklist",
   "version": "0.1.0",
-  "description": "design checklist to improve quality of sitebuilder designs",
+  "description": "A design checklist to improve quality of site builder designs",
   "main": "source/client.js",
   "scripts": {
     "start": "brb serve --config='./webpack.shared.config'",
     "build": "NODE_ENV=production brb build --base-path=$BASE_PATH --config='./webpack.shared.config'",
-    "build:staging": "ENV_FILE=.env.staging BASE_PATH='/checklist/' yarn build",
-    "build:prod": "ENV_FILE=.env.production yarn run build",
-    "deploy:staging": "yarn build:staging && brb deploy --target='gh-pages'",
-    "deploy:prod": "yarn build:prod && brb deploy --target='s3' --bucket='blackbaud-sites.com' --prefix='checklist.blackbaud-sites.com'",
+    "build:prod": "BASE_PATH='/checklist/' yarn build",
+    "deploy:prod": "yarn build:prod && brb deploy --target='gh-pages'",
     "lint": "brb lint"
   },
   "author": "Everydayhero",
+  "license": "UNLICENSED",
   "dependencies": {
     "boiler-room-builder": "^2.0.0",
     "boiler-room-runner": "^1.4.3",

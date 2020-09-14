@@ -210,5 +210,5 @@ export default [
       yes: examples.highResYes,
       no: examples.highResNo
     }
-  },
+  }
 ]
