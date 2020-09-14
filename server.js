@@ -1925,7 +1925,10 @@ var Root = function Root(_ref) {
       _react2.default.createElement(
         _reactHelmet2.default,
         null,
-        _react2.default.createElement('link', { href: 'https://fonts.googleapis.com/css?family=Merriweather:400i', rel: 'stylesheet' }),
+        _react2.default.createElement('link', {
+          href: 'https://fonts.googleapis.com/css?family=Merriweather:400i',
+          rel: 'stylesheet'
+        }),
         _react2.default.createElement('link', { rel: 'icon', type: 'image/png', href: _favicon2.default })
       ),
       _react2.default.createElement(_Header2.default, null),
@@ -1940,9 +1943,7 @@ var Root = function Root(_ref) {
             { md: 9 },
             _react2.default.createElement(
               _Heading2.default,
-              {
-                styles: { padding: '3em 0 1em' }
-              },
+              { styles: { padding: '3em 0 1em' } },
               checklist.length,
               ' helpful guidelines centered around 4 basic design principles, to help create consistent, user\xA0friendly website designs\xA0in\xA0sitebuilder.'
             ),
@@ -1958,7 +1959,8 @@ var Root = function Root(_ref) {
                     color: '#0000FF',
                     textDecoration: 'underline'
                   },
-                  href: 'http://learndesignprinciples.com' },
+                  href: 'http://learndesignprinciples.com'
+                },
                 'learndesignprinciples.com'
               ),
               '\xA0by Melissa\xA0Mandelbaum'
