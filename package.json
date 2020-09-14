@@ -20,7 +20,7 @@
     "cxsync": "^1.0.9",
     "dotenv-webpack": "^1.4.1",
     "es6-promise": "^4.0.5",
-    "lodash": "^4.17.0",
+    "lodash": "^4.17.19",
     "minimal.css": "^1.0.1",
     "react": "^15.4.2",
     "react-color": "^2.14.1",
