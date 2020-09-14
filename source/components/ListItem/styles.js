@@ -23,7 +23,7 @@ export default ({ checked }, { mediaQuery }) => ({
     justifyContent: 'space-between',
     width: '100%',
     [mediaQuery('sm', 'max-width')]: {
-      display: 'block',
+      display: 'block'
     }
   },
 
@@ -32,7 +32,7 @@ export default ({ checked }, { mediaQuery }) => ({
     position: 'relative',
     [mediaQuery('sm', 'max-width')]: {
       paddingTop: '2em',
-      width: '100%',
+      width: '100%'
     }
   },
 

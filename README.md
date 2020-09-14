@@ -1,12 +1,19 @@
-# Checklist
 
-design checklist to improve quality of sitebuilder designs
+<h3 align='center'>Design Checklist</h3>
 
----
+<p align='center'>A design checklist to improve quality of sitebuilder designs</p>
 
-<!-- Site links
-[Staging](https://www.example.com) | [Production](https://www.example.com)
--->
+<p align='center'>
+  <a href='https://blackbaud-services.github.io/checklist'>View site</a>
+</p>
+
+<br />
+
+<p align='center'>
+  <a href='https://blackbaud-services.github.io/checklist'>
+    <img width='420' src="https://blackbaud-services.github.io/checklist/1649391eaf76f1f583528331a54f0494.png" />
+  </a>
+</p>
 
 ## Usage
 
@@ -31,16 +38,11 @@ This will run a local development server at [http://localhost:8080](http://local
 ### Deployment
 
 ```shell
-yarn deploy:staging
+yarn deploy
 ```
 
 This will build and deploy the site to Github Pages
 
-```shell
-yarn deploy:prod
-```
-
-This will build and deploy the site to production
 
 ---
 
